@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<form action="/cz-aula2-fundamentos/Exercicio1" method="get">
+		<b>Exercício 1 - Verifica maior número</b>
+		<br>
+		<br>
+		<label>Primeiro número:</label>
+		<input type="text" name="num1">
+		<label>Segundo número:</label>
+		<input type="text" name="num2">
+		<input type="submit" value="Verificar">
+		</form>
+		<br>
+		<br>
+		
+		<form action="/cz-aula2-fundamentos/Exercicio2" method="get">
+		<b>Exercício 2 - Laços: Imprimir de forma sequencial. Utilizando Get</b>
+		<br>
+		<br>
+		<script type="text/javascript">
+		function checkNumber(valor){
+			if(valor != "") {
+				var regra = /^[0-9]+$/;
+				if(!valor.match(regra)){
+					alert("Permitido somente número inteiro positivo!");
+				}
+			}
+		};
+		</script>
+		<label>Primeiro número:</label>
+		<input type="text" name="num1" onblur="checkNumber(this.value);">
+		<label>Segundo número:</label>
+		<input type="text" name="num2" onblur="checkNumber(this.value);">
+		<input type="submit" value="Get">
+		</form>
+		<br>
+		<br>
+		
+		<form action="/cz-aula2-fundamentos/Exercicio2" method="post">
+		<b>Exercício 2 - Laços: Imprimir de forma sequencial. Utilizando Post</b>
+		<br>
+		<br>
+		<script type="text/javascript">
+		function checkNumber(valor){
+			if(valor != "") {
+				var regra = /^[0-9]+$/;
+				if(!valor.match(regra)){
+					alert("Permitido somente número inteiro positivo!");
+				}
+			}
+		};
+		</script>
+		<label>Primeiro número:</label>
+		<input type="text" name="num1" onblur="checkNumber(this.value);">
+		<label>Segundo número:</label>
+		<input type="text" name="num2" onblur="checkNumber(this.value);">
+		<input type="submit" value="Post">
+		</form>
+		<br>
+		<br>
+		
+		<form action="/cz-aula2-fundamentos/Exercicio3" method="get">
+		<b>Exercício 3 - Laços: Imprimir de forma sequencial. Utilizando Get informando o tipo de laço utilizado</b>
+		<br>
+		<br>
+		<script type="text/javascript">
+		function checkNumber(valor){
+			if(valor != "") {
+				var regra = /^[0-9]+$/;
+				if(!valor.match(regra)){
+					alert("Permitido somente número inteiro positivo!");
+				}
+			}
+		};
+		</script>
+		<label>Primeiro número:</label>
+		<input type="text" name="num1" onblur="checkNumber(this.value);">
+		<label>Segundo número:</label>
+		<input type="text" name="num2" onblur="checkNumber(this.value);">
+		<br>
+		<b>Selecione o tipo de laço:</b>
+		<br>
+		<input type="radio" name="laco" value="For"> For
+  		<input type="radio" name="laco" value="While"> While
+  		<input type="radio" name="laco" value="Do While"> Do While<br>
+		<input type="submit" value="Get">
+
+		</form>
+</body>
+</html>
