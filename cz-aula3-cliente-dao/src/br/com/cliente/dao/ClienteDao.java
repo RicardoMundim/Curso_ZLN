@@ -19,7 +19,7 @@ public class ClienteDao {
 		clientes = new ArrayList<Cliente>();
 		
 		Cliente cliente1 = new Cliente();
-		cliente1.setId(1);
+		cliente1.setId(3);
 		cliente1.setNome("Ricardo");
 		cliente1.setSobreNome("Mundim");
 		cliente1.setIdade(38);
@@ -29,12 +29,16 @@ public class ClienteDao {
 		/*
 		 * Usando o construtor
 		 */
+		clientes.add(new Cliente(1,"Amanda","Mundim",36,"999419999"));
 		clientes.add(new Cliente(2,"Jandeilson","Nascimento",30,"99999"));
+
 	}
 	
 	public List<Cliente> obterTodosClientes(){
 		return this.clientes;
 	}
+	
+	
 	
 	
 }
