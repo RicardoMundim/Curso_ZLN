@@ -3,6 +3,7 @@ package br.com.cliente.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.cliente.model.Cliente;
 import br.com.cliente.model.Usuario;
 
 public class UsuarioDao implements IDefaultDao {

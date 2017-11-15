@@ -1,5 +1,7 @@
 package br.com.cliente.model;
 
+import java.util.List;
+
 public class Usuario {
 
 	private String usuario;
@@ -37,5 +39,7 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	
+	
 }
 
